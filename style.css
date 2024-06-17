@@ -1,0 +1,187 @@
+/* Подключение кастомных шрифтов */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('CustomFont.woff2') format('woff2'),
+         url('CustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Общие стили */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1660770912_4-kartinkin-net-p-igrovoi-fon-dlya-saita-krasivo-4.jpg');
+    background-size: cover;background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Стили для header */
+  header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'CustomFont', serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  /* Стили для hero section */
+  .hero {
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для services section */
+  .services {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .service-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .service-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Стили для testimonials section */
+  .testimonials {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .swiper-slide blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .swiper-slide cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Стили для footer */
+  footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Адаптивные стили для мобильных устройств */
+  @media (max-width: 767px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .service-item img {
+      height: 150px;
+    }
+  }

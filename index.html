@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Компьютерный клуб</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">Компьютерный клуб</a>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Добро пожаловать в наш клуб!</h1>
+      <p>Играй, общайся и развивайся вместе с нами</p>
+      <a href="#" class="btn">Присоединиться</a>
+    </section>
+
+    <section class="services">
+      <h2>Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <img src="https://img.ixbt.site/live/topics/preview/00/01/88/04/fbd329383d.png" alt="Игры">
+          <h3>Игры</h3>
+          <p>Захватывающие сетевые и одиночные игры на современном оборудовании.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://ocdn.eu/sport-images-transforms/1/NIlk9lBaHR0cHM6Ly9vY2RuLmV1L3B1bHNjbXMvTURBXy85ZWY1OGJiZjEwMGYyMzJmZDBhMjA2NjdiOWZjMTgyNy5wbmeTlQMAAM0HgM0EOJUCzQSwAMLDkwmmYWFjOTZlBt4AAqEwAaExAQ/donk-o-s1mpleu.png" alt="Киберспорт">
+          <h3>Киберспорт</h3>
+          <p>Турниры, соревнования и тренировки для киберспортсменов любого уровня.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://delovoy-kirov.ru/files/media/events/4313.jpg" alt="Обучение">
+          <h3>Обучение</h3>
+          <p>Курсы по программированию, дизайну и другим IT-направлениям.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Что говорят наши клиенты</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <blockquote>
+              <p>"Потрясающее место! Здесь всегда весело и комфортно. Рекомендую!"</p>
+              <cite>- Алексей, 25 лет</cite>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote>
+              <p>"Лучший компьютерный клуб, который я когда-либо посещал. Обязательно приду сюда снова!"</p>
+              <cite>- Мария, 22 года</cite>
+            </blockquote>
+          </div>
+          <div class="swiper-slide">
+            <blockquote>
+              <p>"Отличное место для игр, общения и развития. Обслуживание на высоте!"</p>
+              <cite>- Дмитрий, 30 лет</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Компьютерный клуб. Все права защищены.</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
